@@ -1,0 +1,199 @@
+#haikei {
+/*    background-color: #ffb6c1;*/
+    background-color: #d8bfd8;
+    font-family: serif;
+    color: #696969;
+}
+h1 {
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+    text-align: center;
+}
+
+h1:first-letter {
+  font-size: 120%;
+  color: #c71585;
+}
+
+h1:before, h1:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    border-top: solid 2px #696969;
+    border-bottom: solid 2px #696969;
+    text-align: center;
+}
+
+h1:before {
+    left: 0;
+}
+
+h1:after {
+    right: 0;
+}
+
+
+
+a {
+font-weight:bold;
+text-decoration:none;
+}
+
+a:link {
+color:#696969;
+}
+
+a:visited {
+color:#696969;
+}
+
+a:hover {
+color:#3cb371;
+text-decoration:underline;
+}
+
+a:active {
+color:#33CC00;
+}
+
+
+
+.menu {
+    text-align: center;
+    font-size: 27px;
+    text-decoration: none;
+}
+.menu-item {
+    display: inline-block;
+    border: solid;
+    border: 3px solid;
+    border-color: #696969;
+    text-decoration: none;
+/*    background-color: #c0c0c0;*/
+    border-radius: right;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.menu-item :first-letter {
+  font-size: 110%;
+  color: #c71585;
+}
+
+.menu-table {
+  display: table;
+  table-layout: fixed;
+/*  width: 100%;*/
+  text-decoration: none;  
+}
+
+.menu-table .menu-item {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+    text-decoration: none;
+}
+
+.menu-table .menu-link {
+  display: block;
+  padding: 8px 10px;
+  word-wrap: break-word;
+    text-decoration: none;
+}
+
+.menu-itemsub {
+   margin: 0px;        /* ★サブメニュー外側の余白(ゼロ) */
+   padding: 0px;       /* ★サブメニュー内側の余白(ゼロ) */
+   display: none;      /* ★標準では非表示にする */
+   position: absolute; /* ★絶対配置にする */
+     width: 135px;               /* サブメニュー1項目の横幅(135px) */
+   border-top: 1px solid pink; /* 項目上側の枠線(ピンク色で1pxの実線) */
+}
+
+
+div {
+   display: inline-block;
+    font-size: 23px;
+    position: relative;
+    padding: 1em 2em;
+}
+
+
+div:first-letter {
+  font-size: 140%;
+  color: #c71585;
+}
+
+div {
+ position: relative;
+  padding: 0rem 1rem 0rem 30px;
+  border-bottom: 1.5px solid #696969;
+}
+
+div > span {
+  font-size: 23px;
+  font-size: 50px.;
+  line-height: 0.;
+  position: relative
+  bottom: 0rem;
+  left: 0;
+}
+
+p {
+    text-indent: 3rem;  
+}
+
+#theme {
+    font-size: 20px;
+    color: #c71585;
+    background: linear-gradient(transparent 60%, #c0c0c0 60%);
+    line-height: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

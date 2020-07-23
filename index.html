@@ -1,28 +1,221 @@
-<!DOCTYPE html>
+<!DOCKTYPE html>
+    <html lang="ja">
 
-<html lang="ja">
     <head>
-        <meta charset="utf-8" />
-        <title>第12回 Chart.jsでグラフを描画</title>
-    </head>
-    <body>
-        <header>
-            <h1>Chart.jsでグラフを描画</h1>
-        </header>
-        
-        <div>
-            <h2>棒グラフ</h2>
-            <canvas id="bar" width="200" height="400"></canvas>
-        
-        </div>
-       
-        
-        
-        <!-- 外部のjavascriptを読み込む-->
-　　　　　<!-- 読み込む順番が重要    -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-       <script src="js/chart-test.js"></script>
-        
-    </body>   
-</html>    
+    <meta charset="utf-8">
+    <meta name="author" content="Marin" />
+    <meta name="keywords" content="html, css, javascript" />
+    <link rel="stylesheet" href="css/boxmodel.css" />
+    <title>my trip | Chicago</title>
+</head>
+
+<body id="haikei">
+    <header>
+        <h1 id="trip" style="text-align: center;">My trip</h1>
+        <!--
+            <details>
+                <summary >≡</summary>
+                <nav id="menu">
+-->
+
+
+        <ul class="menu menu-table">
+            <li class="menu-item"><a href="#iro1" class="menu-link">home</a></li>
+
+
+            <li class="menu-item menu-item-active"><a href="#iro2" class="menu-link">about</a></li>
+<!--
+            <ul class="menumenu">
+                <li class="menuitemsub"><a href="#hiduke">Date</a></li>
+                <li class="menuitemsub"><a href="ppp">Process</a></li>
+            </ul>
+-->
+
+            <li class="menu-item"><a href="#iro3" class="menu-link">activity</a></li>
+<!--
+            <ul class="menumenu">
+                <li class="menuitemsub"><a href="food">Food</a></li>
+                <li class="menuitemsub"><a href="trip">Trip to Chicago</a></li>
+            </ul>
+-->
+
+        </ul>
+
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <div><span>01</span><a id="iro1">&nbsp;&nbsp;home&nbsp;&nbsp;&nbsp;</a></div>
+        <p>アメリカ留学中のお話や、写真を載せています。</p>
+
+        <p><img src="img/home1.jpg" alt="kuma" width="700" /></p>
+
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <div><span>02</span><a id="iro2">&nbsp;&nbsp;about&nbsp;&nbsp;&nbsp;</a></div>
+        <p id="theme"><a id="hiduke">Date</a></p>
+        <p>2020.2.8~2020.3.8</p>
+
+        <p id="theme">Place</p>
+        <p>Southern Illinois University, Illinois, U.S.A. </p>
+
+        <p id="theme">Purpose</p>
+        <p>英語の勉強、アメリカ観光 etc...</p>
+
+        <p id="theme"><a id="ppp">Process @university</a></p>
+        <p>飛行機でアメリカへ</p>
+        <p id="hikouki"><img src="img/hikouki.jpg" alt="hikouki" width="500" /></p>
+        <p><img src="img/hikouki2.jpg" alt="hikouki2" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>大学の構内見学</p>
+        <p id="daigaku"><img src="img/daigaku.jpg" alt="daigaku" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>動物愛護協会を訪問。</p>
+        <p id="neko"><img src="img/neko.jpg" alt="neko" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>世界の伝統的な食べ物を紹介するフードフェア。</p>
+        <p id="foodfare"><img src="img/foodfare.jpg" alt="foodfare" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>インディアナ州の雪山でのsnow tubing。</p>
+        <p id="snow"><img src="img/snow.jpg" alt="snow" width="500" /></p>
+        <p><img src="img/snow2.jpg" alt="snow2" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>高齢者センターを訪問しビンゴやお話。</p>
+        <p id="bingo"><img src="img/bingo.jpg" alt="bingo" width="500" /></p>
+        <p><img src="img/ozii.jpg" alt="ozii" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>大学バスケの生観戦。</p>
+        <p id="basket"><img src="img/basketball.jpg" alt="basketball" width="500" /></p>
+        <p><img src="img/basket.jpg" alt="basket" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>メイプルシロップフェスティバル。</p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>クラフトショップを訪問。</p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>修了式</p>
+        <p id="final"><img src="img/final.jpg" alt="final" width="500" /> </p>
+        <p>etc...</p>
+
+
+        <div><span>03</span><a id="iro3">&nbsp;&nbsp;activity&nbsp;&nbsp;&nbsp;</a></div>
+
+        <p id="theme"><a id="food">Food</a></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p><img src="img/food1.jpg" alt="food1" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p><img src="img/food2.jpg" alt="food2" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p><img src="img/food3.jpg" alt="food3" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p><img src="img/food4.jpg" alt="food4" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p><img src="img/food5.jpg" alt="food5" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p><img src="img/food6.jpg" alt="food6" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p><img src="img/food7.jpg" alt="food7" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p><img src="img/food8.jpg" alt="food8" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+
+        <p><img src="img/food9.jpg" alt="food9" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+
+        <p id="theme"><a id="trip">Trip to Chicago</a></p>
+
+        <p>3月6日、前日の夜中から夜行列車に揺られ、7時間かけてChicagoへ。</p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>Chicagoの街並み...</p>
+        <p><img src="img/matinami.jpg" alt="matinami" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>Chicagoの名所、millennium parkへ。</p>
+        <p><img src="img/mireniamu1.jpg" alt="mireniamu1" width="500" /></p>
+        <p><img src="img/mireniamu2.jpg" alt="mireniamu2" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>Navy Pierへも行きました。</p>
+        <p><img src="img/nebi-pia.jpg" alt="nebi-pia" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>夜ごはんは有名なChicago pizza</p>
+        <p><img src="img/pizza.jpg" alt="pizza" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>夕暮れ時の街並み</p>
+        <p><img src="img/yugure.jpg" alt="yugure" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>夜のChicago</p>
+        <p><img src="img/yoru1.jpg" alt="yoru1" width="500" /></p>
+        <p><img src="img/yoru2.jpg" alt="yoru2" width="500" /></p>
+        <p><img src="img/yoru3.jpg" alt="yoru3" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>Chicago最後に行ったのは、世界一大きStarbucks coffee</p>
+        <p><img src="img/sutaba1.jpg" alt="sutaba1" width="500" /></p>
+        <p><img src="img/sutaba2.jpg" alt="sutaba2" width="500" /></p>
+        <p><img src="img/sutaba3.jpg" alt="sutaba3" width="500" /></p>
+        <p><img src="img/sitaba4.jpg" alt="sutaba4" width="500" /></p>
+        <td>&nbsp;&nbsp;</td>
+        <td>&nbsp;&nbsp;</td>
+
+        <p>etc...</p>
+        <!--
+                </nav>
+            </details>
+-->
+    </header>
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/mytripJQuery.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <footer>
+        Copyright &copy; mn_268. All Rights Reserved.
+    </footer>　
+</body></html>
